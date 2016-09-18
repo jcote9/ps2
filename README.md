@@ -191,6 +191,7 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
   
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 
+  Select 1+ (1.35*price)+ .075*(1.35*price) as 'Sales Price' from unemath_Cote.Products;
   
 10. True or False: Both conditions when using the OR operator must be true.
 
@@ -210,7 +211,11 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 14. How many products are there whose price is between $10 and $20?
 
+  Select count(*) from unemath_Cote. Products where price between 10 and 20;  
   
+  (3226)
 15. How many products are there made in China whose MSRP is between $10 and $20.
 
+Select count(*) from unemath_Cote. Products where msrp between 10 and 20 and country='China';
 
+(2189)
