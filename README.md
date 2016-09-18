@@ -190,11 +190,27 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
   
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
+
+  
 10. True or False: Both conditions when using the OR operator must be true.
+
+  False. OR connects two conditions and returns true if either condition is true or if both are true. 
+  
 11. What is the logical negation of the IN operator?
+
+  Logically the negation of IN is NOT. 
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
+
+  You need the condition "AND" between 10, and 100, and you also need the product name with a period. For example unemath_Cote.Products
+  
 13. Select products with length less than 12 inches and sort decsending.
+
+  Select * from unemath_Cote. Products where length < 12
+  order by length desc; 
+
 14. How many products are there whose price is between $10 and $20?
+
+  
 15. How many products are there made in China whose MSRP is between $10 and $20.
 
 
